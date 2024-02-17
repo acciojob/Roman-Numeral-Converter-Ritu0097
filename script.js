@@ -23,3 +23,5 @@ function convertToRoman(num) {
     }
     return ans;
 }
+console.log(convertToRoman(36));
+module.exports = convertToRoman;
