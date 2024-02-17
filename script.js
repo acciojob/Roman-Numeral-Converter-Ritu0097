@@ -13,14 +13,14 @@ function convertToRoman(num) {
 	  10:['IV',4],
       11:['I', 1]
     };
-	let ans;
-	for(let i=0;i<obj.length;i++){
-	   while(obj[i]<=num){
-		   ans=ans+obj[i];
-		   num=num-obj[i];
-	   }
-	}
-	return ans;
+	let ans='';
+    for (let i=0;i<Object.keys(obj).length; i++) {
+        while (obj[i][1]<=num) {
+            ans=ans+obj[i][0];
+            num=num-obj[i][1];
+        }
+    }
+    return ans;
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
