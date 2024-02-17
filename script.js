@@ -13,7 +13,7 @@ function convertToRoman(num) {
 	  10:['IV',4],
       11:['I', 1]
     };
-	let ans='';
+	let ans;
 	for(let i=0;i<obj.length;i++){
 	   while(obj[i]<=num){
 		   ans=ans+obj[i];
